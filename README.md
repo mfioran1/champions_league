@@ -1,8 +1,14 @@
 # ChampionsLeague
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/champions_league`. To experiment with that code, run `bin/console` for an interactive prompt.
+This CLI will be able to show you which top 4 teams will be currently joining the champions league from the english premier league.
 
-TODO: Delete this and the text above, and describe your gem
+user can type qualify! to start
+
+shows the top 4 teams who qualify
+
+which team would you like to see their current score?
+
+ Liverpool - won # - lost # - draw # - total points 
 
 ## Installation
 
