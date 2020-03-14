@@ -1,6 +1,5 @@
-require "champions_league/version"
+require_relative "./champions_league/version"
+require_relative './champions_league/cli'
 
-module ChampionsLeague
-  class Error < StandardError; end
-  # Your code goes here...
-end
+
+

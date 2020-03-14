@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/champions_league'
+
+ChampionsLeague::CLI.new.call
