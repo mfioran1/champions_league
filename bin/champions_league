@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
-require './lib/champions_league'
+#require './lib/champions_league'
+require "bundler/setup"
+require "champions_league"
 
 ChampionsLeague::CLI.new.call

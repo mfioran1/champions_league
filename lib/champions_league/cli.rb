@@ -21,6 +21,9 @@ class ChampionsLeague::CLI
     while input != "goodbye"
     puts "Enter the number of the team to see their stats, or type goodbye to leave."
       input = gets.strip
+      if input.to_i > 0 
+        puts @teams[input.to_i-1]
+      elsif input ==   
       case input
       when "1"
         puts "Liverpool W- L- D- total points: "
