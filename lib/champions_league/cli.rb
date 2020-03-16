@@ -7,12 +7,13 @@ class ChampionsLeague::CLI
   end
   
   def list_teams
-    puts "Which 4 english premier teams will currently qualify for Champions League?"
-    puts " 
-    1. Liverpool
-    2. Manchester City
-    3. Leicester City
-    4. Chelsea"
+    #puts "Which 4 english premier teams will currently qualify for Champions League?"
+    #puts " 
+    #1. Liverpool
+    #2. Manchester City
+    #3. Leicester City
+    #4. Chelsea"
+    @teams = ChampionsLeague::Teams.all 
   end
   
   def teams
