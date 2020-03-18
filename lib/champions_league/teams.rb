@@ -2,13 +2,7 @@ class ChampionsLeague::Teams
   attr_accessor :name, :wins, :losses, :draws, :total_points
   
   def self.all 
-    # puts "Which 4 english premier teams will currently qualify for Champions League?"
-    # puts " 
-    # 1. Liverpool
-    # 2. Manchester City
-    # 3. Leicester City
-    # 4. Chelsea"
-    
+   
     team_1 = self.new 
     team_1.name = "Liverpool"
     team_1.wins = "234"
