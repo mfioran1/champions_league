@@ -15,9 +15,15 @@ class ChampionsLeague::Teams
   
   def self.scrape_premier
     doc = Nokogiri::HTML(open("https://premierleague.com/tables"))
-    name = doc.search("span.long").first.text
+    table = doc.search("tbody")
+    table.search("tr")[1]
+    table.search("tr").each do |name| 
+      name.search("span.long").text 
+      
     binding.pry 
+    end
   end
   
 end  
-name = doc.search("span.long").first.text
+#name = doc.search("span.long").first.text
+#table.search("td.points").first.text
