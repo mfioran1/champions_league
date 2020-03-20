@@ -73,34 +73,6 @@ class ChampionsLeague::Teams
     
   
 end  
-#name = doc.search("span.long").first.text
-#table.search("td.points").first.text
-#Liverpool
- #doc.css("span.hide-mobile").first.text
- #doc.css("span.stat-cell")[1].text
- #doc.css("span.stat-cell")[2].text
- #doc.css("span.stat-cell")[3].text
- #doc.css("span.stat-cell")[7].text
- 
- #Manchester City 
- #doc.css("span.hide-mobile")[1].text
- #doc.css("span.stat-cell")[9].text
- #doc.css("span.stat-cell")[10].text
- #doc.css("span.stat-cell")[11].text
- #doc.css("span.stat-cell")[15].text
- 
- #Leicester City 
- #doc.css("span.hide-mobile")[2].text
- #doc.css("span.stat-cell")[17].text
- #doc.css("span.stat-cell")[18].text
- #doc.css("span.stat-cell")[19].text
- #doc.css("span.stat-cell")[23].text
- 
- #Chelsea
- #doc.css("span.hide-mobile")[3].text
- #doc.css("span.stat-cell")[25].text
- #doc.css("span.stat-cell")[26].text
- #doc.css("span.stat-cell")[27].text
- #doc.css("span.stat-cell")[31].text
+
  
  

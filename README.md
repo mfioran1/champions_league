@@ -1,14 +1,10 @@
 # ChampionsLeague
 
-This CLI will be able to show you which top 4 teams will be currently joining the champions league from the english premier league.
+Welcome to Champions League qualifications!
 
-user can type qualify! to start
+The purpose of this gem is to see which teams from the premier league will qualify for the Champions league.
 
-shows the top 4 teams who qualify
-
-which team would you like to see their current score?
-
- Liverpool - won # - lost # - draw # - total points 
+The Two Different Functions Are: Which are the top 4 teams that will qualify? And what are their game statistics that put them into qualifying range.
 
 ## Installation
 
@@ -28,7 +24,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First make sure you are in the proper directory to call bin.
+
+Then simple type ./bin/champions_league and your application will start.
 
 ## Development
 
