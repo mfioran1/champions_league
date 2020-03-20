@@ -1,4 +1,5 @@
 class ChampionsLeague::CLI 
+  attr_accessor :name
   
   def call 
     list_teams
@@ -7,12 +8,8 @@ class ChampionsLeague::CLI
   end
   
   def list_teams
-    puts "Which 4 english premier teams will currently qualify for Champions League?"
-    #puts " 
-    #1. Liverpool
-    #2. Manchester City
-    #3. Leicester City
-    #4. Chelsea"
+    puts "Which 4 english premier teams will currently qualify for Champions League?".colorize(:green)
+    
     @teams = ChampionsLeague::Teams.all
     @teams.each.with_index(1) do |team, i|
       puts "#{i}. #{team.name}"
@@ -22,7 +19,7 @@ class ChampionsLeague::CLI
   def teams
     input = nil 
     while input != "goodbye"
-    puts "Enter the number of the team to see their stats, or type goodbye to leave."
+    puts "Enter the number of the team to see their stats, or type goodbye to leave.".colorize(:blue)
       input = gets.strip
       if input.to_i > 0 
         each_team = @teams[input.to_i-1]
@@ -30,13 +27,13 @@ class ChampionsLeague::CLI
       elsif input == "begin" 
         list_teams
       else
-        puts "That didn't work, if you want to start over type begin."
+        puts "That didn't work, if you want to start over type begin.".colorize(:red)
       end
     end
   end
   
   def goodbye
-    puts "Stay tuned for more Champions League information!"
+    puts "Stay tuned for more Champions League information!".colorize(:green)
   end
   
 end  
