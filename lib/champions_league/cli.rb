@@ -18,7 +18,7 @@ class ChampionsLeague::CLI
   
   def teams
     input = nil 
-    while input != "goodbye"
+    while input != "exit"
     puts "Enter the number of the team to see their stats, or type goodbye to leave."
       input = gets.strip
       if input.to_i > 0 
@@ -26,6 +26,8 @@ class ChampionsLeague::CLI
         puts "#{each_team.name} - Wins: #{each_team.wins} - Losses: #{each_team.losses} - Draws: #{each_team.draws} - Total Points: #{each_team.total_points}"
       elsif input == "begin" 
         list_teams
+      elsif input == "goodbye"
+        break
       else
         puts "That didn't work, if you want to start over type begin."
       end
